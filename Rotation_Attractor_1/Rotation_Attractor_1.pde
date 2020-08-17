@@ -2,7 +2,7 @@ ArrayList<Agent> agents = new ArrayList<Agent>();
 ArrayList<Agent> Nagents = new ArrayList<Agent>();
 ArrayList<Agent> sagents = new ArrayList<Agent>();
 ArrayList<Agent> Nsagents = new ArrayList<Agent>();
-int baseIncreaseRate = 3000;
+int baseIncreaseRate = 300;
 int baseAgentSpeed = 4;
 float flowFieldPow = 0.001;
 float flowFieldScale = 0.001;
@@ -30,7 +30,7 @@ void mousePressed(){
 
 void draw(){
   if(frameCount%60==0){
-     //Nsagents.add(createBlackHole(mouseX,mouseY));
+     Nsagents.add(createBlackHole(mouseX,mouseY));
   }
   
   if(frameCount%100==0){
